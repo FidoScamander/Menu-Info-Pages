@@ -1,0 +1,15 @@
+{
+  "QualityValue": 5,
+  "ItemTooltipTexture": "UI/ItemQualities/Tooltips/MenuInfoPages_ItemTooltipDemo.png",
+  "ItemTooltipArrowTexture": "UI/ItemQualities/Tooltips/MenuInfoPages_ItemTooltipDemoArrow.png",
+  "SlotTexture": "UI/ItemQualities/Slots/MenuInfoPages_SlotDemo.png",
+  "BlockSlotTexture": "UI/ItemQualities/Slots/MenuInfoPages_SlotDemo.png",
+  "SpecialSlotTexture": "UI/ItemQualities/Slots/MenuInfoPages_SlotDemo.png",
+  "TextColor": "#d6bb3c",
+  "LocalizationKey": "menuinfopages.general.qualities.Demo",
+  "VisibleQualityLabel": true,
+  "RenderSpecialSlot": true,
+  "ItemEntityConfig": {
+    "ParticleSystemId": "Drop_Legendary"
+  }
+}

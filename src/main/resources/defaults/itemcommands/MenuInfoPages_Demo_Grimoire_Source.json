@@ -1,0 +1,34 @@
+{
+  "TranslationProperties": {
+    "Name": "menuinfopages.items.MenuInfoPages_Demo_Grimoire_Source.name"
+  },
+  "Categories": [
+    "Items.Weapons"
+  ],
+  "SubCategory": "MenuInfoPages",
+  "Icon": "Icons/ItemsGenerated/MenuInfoPages_Demo_Grimoire.png",
+  "Quality": "MenuInfoPages_Demo_Quality",
+  "ItemLevel": 40,
+  "Model": "Items/MenuInfoPages/Demo_Grimoire.blockymodel",
+  "Texture": "Items/MenuInfoPages/Demo_Grimoire_Texture.png",
+  "IconProperties": {
+    "Scale": 0.745,
+    "Translation": [
+      -7.8,
+      -7.8
+    ],
+    "Rotation": [
+      45,
+      90,
+      0
+    ]
+  },
+  "MaxStack": 25,
+  "Scale": 1.2,
+  "Tags": {
+    "Family": [
+      "Spellbook"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Weapons_Books"
+}

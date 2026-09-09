@@ -1,0 +1,205 @@
+$C = "../Common.ui";
+
+@SectionStyle = LabelStyle(
+  FontSize: 15,
+  Alignment: Center,
+  VerticalAlignment: Center,
+  TextColor: #d7dee7,
+  RenderUppercase: true,
+  RenderBold: true
+);
+
+@BodyStyle = LabelStyle(
+  FontSize: 14,
+  Alignment: Center,
+  VerticalAlignment: Center,
+  TextColor: #cfd6e0,
+  Wrap: true
+);
+
+@HintStyle = LabelStyle(
+  FontSize: 13,
+  Alignment: Center,
+  VerticalAlignment: Center,
+  TextColor: #8797ab,
+  RenderBold: true
+);
+
+$C.@PageOverlay #InfoPageRoot {
+  LayoutMode: CenterMiddle;
+
+  $C.@DecoratedContainer #InfoPageFrame {
+    Anchor: (Width: 780, Height: 630);
+
+    #Title {
+      $C.@Title #Titul {
+        Text: "INFORMATION PAGE";
+      }
+    }
+
+    #Content {
+      LayoutMode: Full;
+      Padding: (Left: 12, Right: 12, Top: 12, Bottom: 12);
+
+      Group #InfoPagePanel {
+        Anchor: (Full: 0);
+        LayoutMode: Top;
+        Padding: (Left: 6, Right: 6, Top: 4, Bottom: 4);
+
+        Group #ScrollContent {
+          FlexWeight: 1;
+          Anchor: (Bottom: 8);
+          LayoutMode: TopScrolling;
+          ScrollbarStyle: $C.@DefaultScrollbarStyle;
+          Padding: (Left: 9, Right: 0);
+
+          Label #Intro {
+            Anchor: (Bottom: 10);
+            Style: @BodyStyle;
+            Text: "Introductory text";
+          }
+
+          Group #ImageRow {
+            Anchor: (Bottom: 10);
+            LayoutMode: Left;
+
+            Group #ImageSlot1 {
+              LayoutMode: Left;
+              FlexWeight: 1;
+              Visible: false;
+              Label { FlexWeight: 1; }
+              AssetImage #Image1 { Anchor: (Left: 6, Right: 6); Visible: false; }
+              Label { FlexWeight: 1; }
+            }
+
+            Group #ImageSlot2 {
+              LayoutMode: Left;
+              FlexWeight: 1;
+              Visible: false;
+              Label { FlexWeight: 1; }
+              AssetImage #Image2 { Anchor: (Left: 6, Right: 6); Visible: false; }
+              Label { FlexWeight: 1; }
+            }
+
+            Group #ImageSlot3 {
+              LayoutMode: Left;
+              FlexWeight: 1;
+              Visible: false;
+              Label { FlexWeight: 1; }
+              AssetImage #Image3 { Anchor: (Left: 6, Right: 6); Visible: false; }
+              Label { FlexWeight: 1; }
+            }
+
+            Group #ImageSlot4 {
+              LayoutMode: Left;
+              FlexWeight: 1;
+              Visible: false;
+              Label { FlexWeight: 1; }
+              AssetImage #Image4 { Anchor: (Left: 6, Right: 6); Visible: false; }
+              Label { FlexWeight: 1; }
+            }
+
+            Group #ImageSlot5 {
+              LayoutMode: Left;
+              FlexWeight: 1;
+              Visible: false;
+              Label { FlexWeight: 1; }
+              AssetImage #Image5 { Anchor: (Left: 6, Right: 6); Visible: false; }
+              Label { FlexWeight: 1; }
+            }
+          }
+
+          Group #Section1 {
+            Anchor: (Bottom: 12); LayoutMode: Top;
+            Padding: (Top: 8, Left: 12, Right: 12, Bottom: 8);
+            Background: (TexturePath: "../Common/ContainerPanelPatch.png", Border: 10);
+            Label #SectionTitle1 { Anchor: (Bottom: 4); Style: @SectionStyle; Text: "SECTION"; }
+            Group #SectionImageRow1 { Anchor: (Bottom: 6); LayoutMode: Left; Label { FlexWeight: 1; } AssetImage #SectionImage1 { Anchor: (Left: 6, Right: 6); Visible: false; } Label { FlexWeight: 1; } }
+            Label #SectionText1 { Style: @BodyStyle; Text: "Text"; }
+          }
+
+          Group #Section2 {
+            Anchor: (Bottom: 12); LayoutMode: Top;
+            Padding: (Top: 8, Left: 12, Right: 12, Bottom: 8);
+            Background: (TexturePath: "../Common/ContainerPanelPatch.png", Border: 10);
+            Label #SectionTitle2 { Anchor: (Bottom: 4); Style: @SectionStyle; Text: "SECTION"; }
+            Group #SectionImageRow2 { Anchor: (Bottom: 6); LayoutMode: Left; Label { FlexWeight: 1; } AssetImage #SectionImage2 { Anchor: (Left: 6, Right: 6); Visible: false; } Label { FlexWeight: 1; } }
+            Label #SectionText2 { Style: @BodyStyle; Text: "Text"; }
+          }
+
+          Group #Section3 {
+            Anchor: (Bottom: 12); LayoutMode: Top;
+            Padding: (Top: 8, Left: 12, Right: 12, Bottom: 8);
+            Background: (TexturePath: "../Common/ContainerPanelPatch.png", Border: 10);
+            Label #SectionTitle3 { Anchor: (Bottom: 4); Style: @SectionStyle; Text: "SECTION"; }
+            Group #SectionImageRow3 { Anchor: (Bottom: 6); LayoutMode: Left; Label { FlexWeight: 1; } AssetImage #SectionImage3 { Anchor: (Left: 6, Right: 6); Visible: false; } Label { FlexWeight: 1; } }
+            Label #SectionText3 { Style: @BodyStyle; Text: "Text"; }
+          }
+
+          Group #Section4 {
+            Anchor: (Bottom: 12); LayoutMode: Top;
+            Padding: (Top: 8, Left: 12, Right: 12, Bottom: 8);
+            Background: (TexturePath: "../Common/ContainerPanelPatch.png", Border: 10);
+            Label #SectionTitle4 { Anchor: (Bottom: 4); Style: @SectionStyle; Text: "SECTION"; }
+            Group #SectionImageRow4 { Anchor: (Bottom: 6); LayoutMode: Left; Label { FlexWeight: 1; } AssetImage #SectionImage4 { Anchor: (Left: 6, Right: 6); Visible: false; } Label { FlexWeight: 1; } }
+            Label #SectionText4 { Style: @BodyStyle; Text: "Text"; }
+          }
+
+          Group #Section5 {
+            Anchor: (Bottom: 12); LayoutMode: Top;
+            Padding: (Top: 8, Left: 12, Right: 12, Bottom: 8);
+            Background: (TexturePath: "../Common/ContainerPanelPatch.png", Border: 10);
+            Label #SectionTitle5 { Anchor: (Bottom: 4); Style: @SectionStyle; Text: "SECTION"; }
+            Group #SectionImageRow5 { Anchor: (Bottom: 6); LayoutMode: Left; Label { FlexWeight: 1; } AssetImage #SectionImage5 { Anchor: (Left: 6, Right: 6); Visible: false; } Label { FlexWeight: 1; } }
+            Label #SectionText5 { Style: @BodyStyle; Text: "Text"; }
+          }
+        }
+
+        Label #Footer {
+          Anchor: (Height: 20);
+          Style: @HintStyle;
+          Text: "Press Esc to close.";
+        }
+
+        Group #DontShowRow {
+          LayoutMode: Center;
+          Anchor: (Top: 6, Horizontal: 6);
+          Visible: false;
+
+          $C.@CheckBox #DontShowAgainCheck {
+            Anchor: (Width: 24);
+          }
+
+          Label #DontShowAgainLabel {
+            Anchor: (Left: 8, Top: 1);
+            Style: (...$C.@DefaultLabelStyle, FontSize: 16);
+            Text: "Do not show again";
+          }
+        }
+
+        Group #ButtonRow {
+          LayoutMode: Left;
+          Anchor: (Height: 44, Top: 8);
+          Padding: (Top: 5, Bottom: 4, Left: 4, Right: 4);
+          Visible: false;
+
+          TextButton #Button1Primary { Style: $C.@DefaultTextButtonStyle; Text: "BUTTON"; FlexWeight: 1; Anchor: (Height: 34, Left: 4, Right: 4); Visible: false; }
+          TextButton #Button1Secondary { Style: $C.@SecondaryTextButtonStyle; Text: "BUTTON"; FlexWeight: 1; Anchor: (Height: 34, Left: 4, Right: 4); Visible: false; }
+          TextButton #Button1Danger { Style: $C.@CancelTextButtonStyle; Text: "BUTTON"; FlexWeight: 1; Anchor: (Height: 34, Left: 4, Right: 4); Visible: false; }
+          TextButton #Button2Primary { Style: $C.@DefaultTextButtonStyle; Text: "BUTTON"; FlexWeight: 1; Anchor: (Height: 34, Left: 4, Right: 4); Visible: false; }
+          TextButton #Button2Secondary { Style: $C.@SecondaryTextButtonStyle; Text: "BUTTON"; FlexWeight: 1; Anchor: (Height: 34, Left: 4, Right: 4); Visible: false; }
+          TextButton #Button2Danger { Style: $C.@CancelTextButtonStyle; Text: "BUTTON"; FlexWeight: 1; Anchor: (Height: 34, Left: 4, Right: 4); Visible: false; }
+          TextButton #Button3Primary { Style: $C.@DefaultTextButtonStyle; Text: "BUTTON"; FlexWeight: 1; Anchor: (Height: 34, Left: 4, Right: 4); Visible: false; }
+          TextButton #Button3Secondary { Style: $C.@SecondaryTextButtonStyle; Text: "BUTTON"; FlexWeight: 1; Anchor: (Height: 34, Left: 4, Right: 4); Visible: false; }
+          TextButton #Button3Danger { Style: $C.@CancelTextButtonStyle; Text: "BUTTON"; FlexWeight: 1; Anchor: (Height: 34, Left: 4, Right: 4); Visible: false; }
+          TextButton #Button4Primary { Style: $C.@DefaultTextButtonStyle; Text: "BUTTON"; FlexWeight: 1; Anchor: (Height: 34, Left: 4, Right: 4); Visible: false; }
+          TextButton #Button4Secondary { Style: $C.@SecondaryTextButtonStyle; Text: "BUTTON"; FlexWeight: 1; Anchor: (Height: 34, Left: 4, Right: 4); Visible: false; }
+          TextButton #Button4Danger { Style: $C.@CancelTextButtonStyle; Text: "BUTTON"; FlexWeight: 1; Anchor: (Height: 34, Left: 4, Right: 4); Visible: false; }
+          TextButton #Button5Primary { Style: $C.@DefaultTextButtonStyle; Text: "BUTTON"; FlexWeight: 1; Anchor: (Height: 34, Left: 4, Right: 4); Visible: false; }
+          TextButton #Button5Secondary { Style: $C.@SecondaryTextButtonStyle; Text: "BUTTON"; FlexWeight: 1; Anchor: (Height: 34, Left: 4, Right: 4); Visible: false; }
+          TextButton #Button5Danger { Style: $C.@CancelTextButtonStyle; Text: "BUTTON"; FlexWeight: 1; Anchor: (Height: 34, Left: 4, Right: 4); Visible: false; }
+        }
+      }
+    }
+  }
+}

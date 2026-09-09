@@ -1,0 +1,64 @@
+{
+  "autoOpen": {
+    "enabled": true,
+    "mode": "dismissible",
+    "version": 1,
+    "worlds": [],
+    "delayMs": 1500
+  },
+  "command": "guide",
+  "permission": "newt.infopages.newpage",
+  "description": "Open the MenuInfoPages example guide",
+  "title": "MENU INFO PAGES",
+  "intro": "{b}Welcome to MenuInfoPages!{/} This generated example shows the main features available in version 1.3.0. Use it as a starting point for guides, rules, help pages and server information.",
+  "_imagesNote": "Images may use a PNG filename from mods/MenuInfoPages/images/ (for example logo.png), the optional images/logo.png alias, an existing UI asset path, or a direct http(s) PNG URL. Local and remote external images use the live-reload behavior configured in reload.yml. Recommended max width: 700px.",
+  "images": [
+    "UI/Custom/Pages/Images/menuinfopages-example.png"
+  ],
+  "sections": [
+    {
+      "title": "IMPORTANT - AUTO OPEN",
+      "text": "{#ff4fd8}{b}THIS EXAMPLE PAGE OPENS AUTOMATICALLY.\nAFTER TESTING IT, SET \"enabled\": false BEFORE ENABLING AUTO-OPEN ON ANOTHER PAGE.{/}{/}\n\nAvailable modes are once, always and dismissible. An empty worlds list makes the page eligible in every world/instance. Increase version when you want players to receive the automatic page again."
+    },
+    {
+      "title": "CREATE AND RELOAD",
+      "text": "Create a ready-to-edit page with {#54daf4}/infopages newpage <name> <command>{/}. After editing JSON, use {#54daf4}/infopages reload{/} to apply valid page, command and auto-open changes without restarting the server.\n\n{#ffd54a}{b}IMPORTANT\nAFTER CREATING A NEW PAGE COMMAND, RESTART THE SERVER BEFORE NORMAL/NON-OP PLAYERS CAN USE THAT COMMAND.{/}{/}"
+    },
+    {
+      "title": "LOCAL & REMOTE PNG IMAGES",
+      "text": "Put local PNG files in mods/MenuInfoPages/images/ and reference them simply as logo.png (or images/logo.png). Existing UI asset paths and direct HTTP/HTTPS PNG URLs still work. External images are never resized; live image reload is controlled by reload.yml.\n\n{#ffd54a}{b}IMPORTANT\nUSE PNG IMAGES ONLY, PREFERABLY UNDER 2 MB.{/}{/}"
+    },
+    {
+      "title": "RICH TEXT",
+      "text": "Text supports {b}bold{/}, {i}italic{/}, {m}monospace{/} and {#54daf4}hex colors{/}. Use {/} to close the most recently opened format."
+    },
+    {
+      "title": "SECTIONS AND BUTTONS",
+      "text": "A page supports up to five top images, five sections and five bottom action buttons. Buttons can run commands as the player or console, use primary/secondary/danger styles, or simply close the page."
+    }
+  ],
+  "buttons": [
+    {
+      "text": "SPAWN",
+      "command": "spawn",
+      "runAs": "player",
+      "close": true,
+      "style": "primary"
+    },
+    {
+      "text": "HELP",
+      "command": "help",
+      "runAs": "player",
+      "close": true,
+      "style": "secondary"
+    },
+    {
+      "text": "CLOSE",
+      "command": "",
+      "runAs": "player",
+      "close": true,
+      "style": "danger"
+    }
+  ],
+  "footer": "Edit example.json or create a new page with /infopages newpage. Press Esc to close."
+}

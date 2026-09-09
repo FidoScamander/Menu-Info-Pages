@@ -1,0 +1,23 @@
+# MenuInfoPages - Reload Settings
+#
+# Live image reload is EXPERIMENTAL but functional.
+#
+# reload-images: false  (recommended/default)
+#   /infopages reload updates page JSON, text, sections, buttons, commands
+#   and auto-open settings immediately. New or changed PNG files placed in
+#   mods/MenuInfoPages/images/ and changed remote PNG images become active
+#   after the next server restart.
+#
+# reload-images: true   (experimental live image reload)
+#   /infopages reload can also activate new/changed local PNG files and
+#   download/activate changed remote PNG images without restarting the server.
+#   This is especially useful while creating pages and testing images.
+#
+# IMPORTANT:
+#   During a live image update, some UI/HUD images for players already online
+#   may temporarily appear missing or incorrect. Reconnecting restores the UI.
+#   The feature works well for editing and will continue to be maintained and
+#   improved. For normal production use, false remains the recommended default.
+#
+# Local and remote JPEG/JPG or other non-PNG formats are rejected.
+reload-images: false
